@@ -4,10 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ 
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+
+  .card-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+ 
+  .card-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+  
+    </style>
 </head>
 <body>
-    <h1><b>MY FIRST CLASS OF GITHUB</b></h1>
-    <p>hello</p>
-    <img src="https://i.pinimg.com/736x/5f/53/fa/5f53fa5300e75bb9479daf0371c14df8.jpg" width="100px" alt="car">
+   
+    <div class="card">
+        <img src="https://www.zastavki.com/pictures/originals/2017Auto___Lamborghini_Black_car_Lamborghini_Aventador__2018_with_neon_lights_120238_.jpg" alt="Card Image" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">AHSAN ALI</h3>
+          <p class="card-description">This is a description of the card. It can contain some text about the content of the card.</p>
+          <button class="card-btn">Learn More</button>
+        </div>
+      </div>
 </body>
 </html>
